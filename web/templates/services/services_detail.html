@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for field in services %}
+<br>
+<br>
+<div class="col-lg-8">
+        <div class="card">
+                <div class="card-close">
+                <a href="{% url 'services_edit' field.id %}" class="dropdown-item edit"><i class="fa fa-gear"></i></a>
+                </div>
+
+                      
+                <div class="card-header d-flex align-items-center">
+                                <h3 class="h4">Dados Pessoais</h3>
+                    </div>
+                <div class="card-body">
+                    <!-- <div class="avatar"><img src="{{ field.photo.url }}" class="img-fluid rounded-circle" width="200px" height="200px"></div> -->
+                    <b>Nome: </b> {{ field.nome }}  <br>
+                    <b>Valor por sessão: </b> {{ field.valor }} &nbsp;&nbsp;-&nbsp;&nbsp;  <br>
+                    <b>Descrição: </b> {{ field.descricao }} <br>
+    
+
+
+                            </div>
+                        </div>
+                    </div>
+{% endfor %}
+
+{% endblock %}

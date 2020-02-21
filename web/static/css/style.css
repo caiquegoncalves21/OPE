@@ -1,0 +1,60 @@
+
+/* Visualização */
+
+.visualizar p{
+  margin: 0;
+}
+.visualizar{
+  border: 2px solid rgb(252, 175, 175);
+  border-radius: 5px;
+  margin-top: 4px;
+}
+/* rodape */
+.rodape{
+  position: fixed;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #111111;
+  margin: 0;
+}
+.rodape p{
+  color: rgba(236, 236, 236, 0.712);
+  display: block;
+}
+
+/* Formulario */
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.margem{
+  margin-top: 30px;
+}
+
+.select{
+  margin-top: 30px;
+}
+
+.banco-vazio{
+  color: #600c0c;
+  background-color: #f1d1d1;
+  border-color: #ebbebe;
+  border-top-color: #e5abab;
+}
+
+
+
+@media(max-width:796px){
+  #id_conteudo{
+    max-height: 100px;
+    width: 100%;
+  }
+  .mensagem input{
+    width: 100%;
+  }
+}
